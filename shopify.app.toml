@@ -1,0 +1,35 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "7a77b9d2270d2bfd7e2e107a87d7b5ae"
+name = "market-doi-poc"
+application_url = "https://physician-julian-pty-area.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+include_config_on_deploy = true
+
+[webhooks]
+api_version = "2026-04"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/scopes_update" ]
+  uri = "/webhooks/app/scopes_update"
+
+[access_scopes]
+# write_customers: create/find/update customer email marketing consent with Admin GraphQL.
+# unauthenticated_write_customers: call Storefront customerEmailMarketingSubscribe.
+# write_app_proxy: configure the /apps/market-doi app proxy from this TOML.
+scopes = "read_customers,write_customers,unauthenticated_write_customers,write_app_proxy"
+
+[auth]
+redirect_urls = [ "https://example.com/api/auth" ]
+
+[app_proxy]
+url = "/apps/market-doi"
+prefix = "apps"
+subpath = "market-doi"

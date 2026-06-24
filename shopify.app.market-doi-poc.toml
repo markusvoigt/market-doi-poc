@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "15828809ce8f48a2d1aca5a04d7439a9"
+name = "market-doi-poc"
+application_url = "https://physician-julian-pty-area.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2026-07"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers,unauthenticated_write_customers,write_app_proxy,write_customers"
+
+[auth]
+redirect_urls = [ "https://example.com/api/auth" ]
+
+[app_proxy]
+url = "/apps/market-doi"
+prefix = "apps"
+subpath = "market-doi"

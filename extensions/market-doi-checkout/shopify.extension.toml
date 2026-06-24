@@ -1,0 +1,29 @@
+# Learn more: https://shopify.dev/docs/api/checkout-ui-extensions/latest/configuration
+api_version = "2026-04"
+
+[[extensions]]
+name = "Market DOI Checkout"
+handle = "market-doi-checkout"
+type = "ui_extension"
+uid = "83f01e06-aa6d-4464-aa86-c453ee54d0630629"
+
+[extensions.capabilities]
+network_access = true
+api_access = true
+
+[[extensions.targeting]]
+module = "./src/Checkout.jsx"
+target = "purchase.checkout.block.render"
+
+[extensions.settings]
+[[extensions.settings.fields]]
+key = "app_url"
+type = "single_line_text_field"
+name = "Checkout subscribe endpoint"
+description = "Full app URL endpoint, e.g. https://your-app-url.com/public/checkout/subscribe"
+
+[[extensions.settings.fields]]
+key = "label"
+type = "single_line_text_field"
+name = "Consent label"
+description = "Label next to the custom checkout marketing opt-in checkbox."

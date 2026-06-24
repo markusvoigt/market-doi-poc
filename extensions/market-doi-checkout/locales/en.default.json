@@ -1,0 +1,14 @@
+{
+  "consentLabel": "I agree to receive email marketing.",
+  "hints": {
+    "enterEmail": "Enter your email above and we’ll subscribe you."
+  },
+  "errors": {
+    "endpointNotConfigured": "Subscribe endpoint is not configured in the extension settings.",
+    "subscriptionFailed": "Subscription failed"
+  },
+  "success": {
+    "doubleOptIn": "Thanks — please check your inbox to confirm your subscription.",
+    "subscribed": "Thanks — you are subscribed."
+  }
+}
