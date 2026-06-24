@@ -81,7 +81,8 @@ path. If this toggle is OFF, that same call would subscribe the customer directl
 confirmation, defeating the purpose.
 
 ### 2. Disable the native checkout marketing checkboxes
-<img width="1193" height="339" alt="24-13-05a90-bs9qm" src="https://github.com/user-attachments/assets/a995c5c1-3aff-4eb4-87b7-a6705abcf25a" />
+<img width="747" height="227" alt="24-50-do0i5-616eq" src="https://github.com/user-attachments/assets/a995c5c1-3aff-4eb4-87b7-a6705abcf25a" />
+
 **Settings → Checkout → Marketing options** ("Display a checkbox for customers to sign up for
 email or SMS marketing").
 
