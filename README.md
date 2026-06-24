@@ -1,5 +1,10 @@
 # Market-aware double opt-in POC
 
+<a href="https://youtu.be/I00RxKuqrUA">
+     <img src="https://img.youtube.com/vi/I00RxKuqrUA/maxresdefault.jpg" alt="Demo video" width="600">
+</a>
+
+
 This is a minimal Shopify app POC for routing email marketing consent by buyer country / market.
 
 It implements the workaround discussed for per-market double opt-in:
@@ -25,9 +30,7 @@ It implements the workaround discussed for per-market double opt-in:
 - Public checkout backend endpoint:
   - `POST /public/checkout/subscribe`
 
-## Dev-docs checked
-
-The implementation was checked against:
+## Dev-docs
 
 - App proxies: `https://shopify.dev/docs/apps/build/online-store/app-proxies`
 - Admin GraphQL `customerEmailMarketingConsentUpdate`: `https://shopify.dev/docs/api/admin-graphql/latest/mutations/customerEmailMarketingConsentUpdate`
@@ -61,9 +64,10 @@ work correctly. The principle is:
 > opt-in signal).
 
 ### 1. Enable the global Marketing double opt-in
-
+<img width="737" height="278" alt="24-51-kltut-x36vc" src="https://github.com/user-attachments/assets/a71f23eb-2755-4612-a86f-543af1ea72fc" />
 **Settings → Notifications → Customer marketing confirmation** (the "Marketing double opt-in"
 panel).
+
 
 - Turn the **Customer marketing confirmation** toggle **ON**.
   > _Sent to subscribers so they can confirm their email or SMS subscription._
@@ -77,7 +81,7 @@ path. If this toggle is OFF, that same call would subscribe the customer directl
 confirmation, defeating the purpose.
 
 ### 2. Disable the native checkout marketing checkboxes
-
+<img width="1193" height="339" alt="24-13-05a90-bs9qm" src="https://github.com/user-attachments/assets/a995c5c1-3aff-4eb4-87b7-a6705abcf25a" />
 **Settings → Checkout → Marketing options** ("Display a checkbox for customers to sign up for
 email or SMS marketing").
 
