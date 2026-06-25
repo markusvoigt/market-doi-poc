@@ -65,6 +65,7 @@ work correctly. The principle is:
 
 ### 1. Enable the global Marketing double opt-in
 <img width="737" height="278" alt="24-51-kltut-x36vc" src="https://github.com/user-attachments/assets/a71f23eb-2755-4612-a86f-543af1ea72fc" />
+
 **Settings → Notifications → Customer marketing confirmation** (the "Marketing double opt-in"
 panel).
 
